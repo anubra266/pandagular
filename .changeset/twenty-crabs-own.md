@@ -1,0 +1,5 @@
+---
+"pandagular": minor
+---
+
+Initial release
