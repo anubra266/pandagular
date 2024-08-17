@@ -2,6 +2,12 @@
 
 Angular plugin for pandacss
 
+## Install
+
+```sh
+npm i pandagular
+```
+
 ## Usage
 
 Follow the [pandacss installation guide](https://panda-css.com/docs/installation/cli) for CLI, but keep the following in mind:
@@ -42,7 +48,9 @@ export class AngularComponent {
 
 ```html
 <div [className]="css({ p: '4', bg: 'red.500' color: 'white' })">
-  <h1 [className]="css({ textStyle: '2xl', fontWeight: 'bold' })">Hello World</h1>
+  <h1 [className]="css({ textStyle: '2xl', fontWeight: 'bold' })">
+    Hello World
+  </h1>
 </div>
 ```
 
