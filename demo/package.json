@@ -2,7 +2,7 @@
   "name": "demo",
   "version": "0.0.0",
   "scripts": {
-    "prepare": "panda codegen",
+    "postinstall": "panda codegen",
     "ng": "ng",
     "start:css": "panda --watch",
     "start:ng": "ng serve",
