@@ -1,6 +1,6 @@
 {
   "name": "pandagular",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Angular plugin for pandacss",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
