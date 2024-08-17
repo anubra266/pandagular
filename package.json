@@ -1,0 +1,38 @@
+{
+  "name": "pandagular-root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest",
+    "dev": "pnpm --parallel --filter=./lib dev",
+    "build-fast": "pnpm -r --parallel --filter=./lib build-fast",
+    "build": "pnpm -r --filter=./lib build",
+    "lint": "eslint lib --ext .ts",
+    "prettier": "prettier --check lib",
+    "prettier-fix": "prettier --write lib",
+    "typecheck": "tsc --noEmit",
+    "release": "changeset publish",
+    "release-dev": "changeset version --snapshot dev && changeset publish --tag dev"
+  },
+  "keywords": [],
+  "author": "Abraham A <anubra266@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.7",
+    "concurrently": "8.2.2",
+    "tsup": "8.0.2",
+    "typescript": "5.3.3",
+    "vitest": "1.5.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.56.11",
+    "@types/node": "20.11.30",
+    "@typescript-eslint/eslint-plugin": "7.0.1",
+    "@typescript-eslint/parser": "7.0.1",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "prettier": "3.2.5"
+  },
+  "packageManager": "pnpm@9.1.0"
+}

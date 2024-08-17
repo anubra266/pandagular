@@ -1,0 +1,38 @@
+{
+  "name": "pandagular",
+  "version": "0.0.1",
+  "description": "Angular plugin for pandacss",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": "./dist/index.js"
+    }
+  },
+  "author": "Segun Adebayo <joseshegs@gmail.com>",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format=esm,cjs --dts",
+    "build-fast": "tsup src/index.ts --format=esm,cjs --no-dts",
+    "dev": "pnpm build-fast --watch"
+  },
+  "dependencies": {
+    "magic-string": "0.30.11"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@pandacss/types": "^0.45.1"
+  }
+}

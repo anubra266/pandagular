@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.build.json",
+  "include": [
+    "lib/*.ts"
+  ],
+  "types": [
+    "vitest/globals"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
