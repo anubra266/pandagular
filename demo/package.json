@@ -5,9 +5,10 @@
     "prepare": "panda codegen",
     "ng": "ng",
     "start:css": "panda --watch",
+    "build:css": "panda",
     "start:ng": "ng serve",
     "start": "concurrently \"npm run start:css\" \"npm run start:ng\"",
-    "build": "ng build",
+    "build": "pnpm run build:css && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:demo": "node dist/demo/server/server.mjs"
