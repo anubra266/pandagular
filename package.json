@@ -4,8 +4,6 @@
   "private": true,
   "scripts": {
     "test": "vitest",
-    "dev": "pnpm --filter=./lib dev",
-    "build-fast": "pnpm --filter=./lib build-fast",
     "build": "pnpm --filter=./lib build",
     "lint": "eslint lib --ext .ts",
     "prettier": "prettier --check lib",
@@ -34,5 +32,5 @@
     "eslint-config-prettier": "9.1.0",
     "prettier": "3.2.5"
   },
-  "packageManager": "pnpm@8.6.12"
+  "packageManager": "pnpm@9.1.0"
 }
