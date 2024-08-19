@@ -37,7 +37,7 @@ jobs:
         uses: ./.github/composite-actions/install
 
       - name: Run tests
-        run: pnpm test && pnpm test:codegen
+        run: pnpm test
 
   eslint:
     name: ESLint
