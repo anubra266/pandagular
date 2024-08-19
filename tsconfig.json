@@ -3,10 +3,12 @@
   "include": [
     "lib/**/*.ts"
   ],
-  "types": [
-    "vitest/globals"
-  ],
   "exclude": [
     "node_modules",
-  ]
+  ],
+  "compilerOptions": {
+    "types": [
+      "vitest/globals"
+    ],
+  }
 }
