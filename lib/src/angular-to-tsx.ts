@@ -10,7 +10,7 @@ export const angularToTsx = (code: string) => {
     let match: RegExpExecArray | null;
     while ((match = angularAttributeRegex.exec(code)) != null) {
       const [fullMatch, attrName, attrValue] = match;
-      let newAttr = `${attrName}={${attrValue}}`;
+      const newAttr = `${attrName}={${attrValue}}`;
 
       original.overwrite(match.index, match.index + fullMatch.length, newAttr);
     }
@@ -20,7 +20,7 @@ export const angularToTsx = (code: string) => {
     const transformed = `const render = (\n${transformedContent}\n)`;
 
     return transformed;
-  } catch (err) {
+  } catch {
     return "";
   }
 };
