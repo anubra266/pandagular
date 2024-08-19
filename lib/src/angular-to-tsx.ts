@@ -1,4 +1,4 @@
-import MagicString from 'magic-string';
+import MagicString from "magic-string";
 
 const angularAttributeRegex = /\[(\w+)\]="([^"]+)"/g;
 
@@ -21,6 +21,6 @@ export const angularToTsx = (code: string) => {
 
     return transformed;
   } catch (err) {
-    return '';
+    return "";
   }
 };
